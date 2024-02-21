@@ -1,0 +1,53 @@
+inderdeep@Inderdeeps-Air Selenium % git add .
+inderdeep@Inderdeeps-Air Selenium % ls
+TestFile.txt
+inderdeep@Inderdeeps-Air Selenium % git commit
+Aborting commit due to empty commit message.
+inderdeep@Inderdeeps-Air Selenium % git commit "First Commit" 
+error: pathspec 'First Commit' did not match any file(s) known to git
+inderdeep@Inderdeeps-Air Selenium % git commit 'First Commit'
+error: pathspec 'First Commit' did not match any file(s) known to git
+inderdeep@Inderdeeps-Air Selenium % git commit . 'First Commit'
+error: pathspec 'First Commit' did not match any file(s) known to git
+inderdeep@Inderdeeps-Air Selenium % git commit -m 'First Commit'
+[master (root-commit) 4aea228] First Commit
+ Committer: Inderdeep <inderdeep@Inderdeeps-Air.ht.home>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 TestFile.txt
+inderdeep@Inderdeeps-Air Selenium % git push 
+Username for 'https://github.com': deep3576
+Password for 'https://deep3576@github.com': 
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/deep3576/Selenium.git/'
+inderdeep@Inderdeeps-Air Selenium % git push
+Username for 'https://github.com': ^C
+inderdeep@Inderdeeps-Air Selenium % git status
+On branch master
+Your branch is based on 'origin/master', but the upstream is gone.
+  (use "git branch --unset-upstream" to fixup)
+
+nothing to commit, working tree clean
+inderdeep@Inderdeeps-Air Selenium % git push
+Username for 'https://github.com': deep3576
+Password for 'https://deep3576@github.com': 
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 219 bytes | 219.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/deep3576/Selenium.git
+ * [new branch]      master -> master
+inderdeep@Inderdeeps-Air Selenium % 
+
